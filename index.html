@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+
+    <main class="container mt-4">
+        <section class="criteria card p-3">
+            <h2 class="mb-3">Password Criteria</h2>
+            <div class="form-group">
+                <label for="password-length">Length (8-128):</label>
+                <input type="number" class="form-control" id="password-length" min="8" max="128">
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="lowercase">
+                <label class="form-check-label" for="lowercase">Include Lowercase</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="uppercase">
+                <label class="form-check-label" for="uppercase">Include Uppercase</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="numeric">
+                <label class="form-check-label" for="numeric">Include Numeric</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="special">
+                <label class="form-check-label" for="special">Include Special Characters</label>
+            </div>
+        </section>
+
+        <section class="generate text-center mt-3">
+            <button class="btn btn-custom" id="generate-btn">Generate Password</button>
+        </section>
+
+        <section class="password card p-3 mt-3">
+            <h2 class="mb-3">Generated Password</h2>
+            <textarea class="form-control" id="password" readonly></textarea>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Password Genius</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

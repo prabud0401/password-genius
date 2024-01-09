@@ -1,0 +1,47 @@
+body {
+    background-color: #80BCBD;
+    background-image: url('blurred-background.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #000000;
+    color: #F9F7C9;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #D5F0C1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.criteria, .generate, .password {
+    background-color: #F9F7C9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.password textarea {
+    background-color: #AAD9BB;
+    color: #333;
+}
+
+.btn-custom {
+    background-color: #015735;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #F9F7C9;
+}
